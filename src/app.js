@@ -20,9 +20,9 @@ dbConnect();
 app.use(express.json());
 
 
-app.get("/",(req,res)={
+app.get('/',(req,res)=>{
     res.json({msg:"Welcom to Expenses API"});
-})
+});
 
 app.use("/api/users",userRoute);
 
